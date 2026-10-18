@@ -16,5 +16,16 @@ namespace BaobabRidgeRehabSystem
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            displayAnimals();
+        }
+
+        private void displayAnimals()
+        {
+            List<Animal> animals = DataHandler.GetAnimals();
+            dgvAnimalRecords.DataSource = animals;
+        }
     }
 }
