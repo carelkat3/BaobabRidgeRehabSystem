@@ -28,151 +28,236 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvAnimalRecords = new System.Windows.Forms.DataGridView();
-            this.grpAnimalDetails = new System.Windows.Forms.GroupBox();
-            this.lblAnimalId = new System.Windows.Forms.Label();
-            this.txtAnimalId = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.lblSpecies = new System.Windows.Forms.Label();
-            this.txtSpecies = new System.Windows.Forms.TextBox();
-            this.lblAge = new System.Windows.Forms.Label();
-            this.txtAge = new System.Windows.Forms.TextBox();
-            this.lblRecoveryScore = new System.Windows.Forms.Label();
-            this.txtRecoveryScore = new System.Windows.Forms.TextBox();
-            this.btnAdd = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAnimalRecords)).BeginInit();
-            this.grpAnimalDetails.SuspendLayout();
-            this.SuspendLayout();
+            dgvAnimalRecords = new System.Windows.Forms.DataGridView();
+            grpAnimalDetails = new System.Windows.Forms.GroupBox();
+            lblAnimalId = new System.Windows.Forms.Label();
+            txtAnimalId = new System.Windows.Forms.TextBox();
+            lblName = new System.Windows.Forms.Label();
+            txtName = new System.Windows.Forms.TextBox();
+            lblSpecies = new System.Windows.Forms.Label();
+            txtSpecies = new System.Windows.Forms.TextBox();
+            lblAge = new System.Windows.Forms.Label();
+            txtAge = new System.Windows.Forms.TextBox();
+            lblRecoveryScore = new System.Windows.Forms.Label();
+            txtRecoveryScore = new System.Windows.Forms.TextBox();
+            btnAdd = new System.Windows.Forms.Button();
+            txtSearchId = new System.Windows.Forms.TextBox();
+            btnSearch = new System.Windows.Forms.Button();
+            btnSaveChanges = new System.Windows.Forms.Button();
+            btnClear = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)dgvAnimalRecords).BeginInit();
+            grpAnimalDetails.SuspendLayout();
+            SuspendLayout();
             // 
             // dgvAnimalRecords
             // 
-            this.dgvAnimalRecords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvAnimalRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAnimalRecords.Location = new System.Drawing.Point(43, 12);
-            this.dgvAnimalRecords.Name = "dgvAnimalRecords";
-            this.dgvAnimalRecords.Size = new System.Drawing.Size(713, 292);
-            this.dgvAnimalRecords.TabIndex = 0;
+            dgvAnimalRecords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dgvAnimalRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvAnimalRecords.Location = new System.Drawing.Point(50, 14);
+            dgvAnimalRecords.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            dgvAnimalRecords.Name = "dgvAnimalRecords";
+            dgvAnimalRecords.Size = new System.Drawing.Size(832, 337);
+            dgvAnimalRecords.TabIndex = 0;
             // 
             // grpAnimalDetails
             // 
-            this.grpAnimalDetails.Controls.Add(this.lblAnimalId);
-            this.grpAnimalDetails.Controls.Add(this.txtAnimalId);
-            this.grpAnimalDetails.Controls.Add(this.lblName);
-            this.grpAnimalDetails.Controls.Add(this.txtName);
-            this.grpAnimalDetails.Controls.Add(this.lblSpecies);
-            this.grpAnimalDetails.Controls.Add(this.txtSpecies);
-            this.grpAnimalDetails.Controls.Add(this.lblAge);
-            this.grpAnimalDetails.Controls.Add(this.txtAge);
-            this.grpAnimalDetails.Controls.Add(this.lblRecoveryScore);
-            this.grpAnimalDetails.Controls.Add(this.txtRecoveryScore);
-            this.grpAnimalDetails.Controls.Add(this.btnAdd);
-            this.grpAnimalDetails.Location = new System.Drawing.Point(43, 315);
-            this.grpAnimalDetails.Name = "grpAnimalDetails";
-            this.grpAnimalDetails.Size = new System.Drawing.Size(713, 115);
-            this.grpAnimalDetails.TabIndex = 1;
-            this.grpAnimalDetails.TabStop = false;
-            this.grpAnimalDetails.Text = "Animal Details";
+            grpAnimalDetails.Controls.Add(lblAnimalId);
+            grpAnimalDetails.Controls.Add(txtAnimalId);
+            grpAnimalDetails.Controls.Add(lblName);
+            grpAnimalDetails.Controls.Add(txtName);
+            grpAnimalDetails.Controls.Add(lblSpecies);
+            grpAnimalDetails.Controls.Add(txtSpecies);
+            grpAnimalDetails.Controls.Add(lblAge);
+            grpAnimalDetails.Controls.Add(txtAge);
+            grpAnimalDetails.Controls.Add(lblRecoveryScore);
+            grpAnimalDetails.Controls.Add(txtRecoveryScore);
+            grpAnimalDetails.Controls.Add(btnAdd);
+            grpAnimalDetails.Location = new System.Drawing.Point(50, 363);
+            grpAnimalDetails.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            grpAnimalDetails.Name = "grpAnimalDetails";
+            grpAnimalDetails.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            grpAnimalDetails.Size = new System.Drawing.Size(832, 133);
+            grpAnimalDetails.TabIndex = 1;
+            grpAnimalDetails.TabStop = false;
+            grpAnimalDetails.Text = "Animal Details";
             // 
             // lblAnimalId
             // 
-            this.lblAnimalId.AutoSize = true;
-            this.lblAnimalId.Location = new System.Drawing.Point(15, 22);
-            this.lblAnimalId.Name = "lblAnimalId";
-            this.lblAnimalId.TabIndex = 0;
-            this.lblAnimalId.Text = "Animal ID (e.g. WR-0007):";
+            lblAnimalId.AutoSize = true;
+            lblAnimalId.Location = new System.Drawing.Point(18, 25);
+            lblAnimalId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblAnimalId.Name = "lblAnimalId";
+            lblAnimalId.Size = new System.Drawing.Size(142, 15);
+            lblAnimalId.TabIndex = 0;
+            lblAnimalId.Text = "Animal ID (e.g. WR-0007):";
             // 
             // txtAnimalId
             // 
-            this.txtAnimalId.Location = new System.Drawing.Point(15, 38);
-            this.txtAnimalId.Name = "txtAnimalId";
-            this.txtAnimalId.Size = new System.Drawing.Size(210, 20);
-            this.txtAnimalId.TabIndex = 1;
+            txtAnimalId.Location = new System.Drawing.Point(18, 44);
+            txtAnimalId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtAnimalId.Name = "txtAnimalId";
+            txtAnimalId.Size = new System.Drawing.Size(244, 23);
+            txtAnimalId.TabIndex = 1;
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(250, 22);
-            this.lblName.Name = "lblName";
-            this.lblName.TabIndex = 2;
-            this.lblName.Text = "Name:";
+            lblName.AutoSize = true;
+            lblName.Location = new System.Drawing.Point(292, 25);
+            lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblName.Name = "lblName";
+            lblName.Size = new System.Drawing.Size(42, 15);
+            lblName.TabIndex = 2;
+            lblName.Text = "Name:";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(250, 38);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(210, 20);
-            this.txtName.TabIndex = 3;
+            txtName.Location = new System.Drawing.Point(292, 44);
+            txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtName.Name = "txtName";
+            txtName.Size = new System.Drawing.Size(244, 23);
+            txtName.TabIndex = 3;
             // 
             // lblSpecies
             // 
-            this.lblSpecies.AutoSize = true;
-            this.lblSpecies.Location = new System.Drawing.Point(485, 22);
-            this.lblSpecies.Name = "lblSpecies";
-            this.lblSpecies.TabIndex = 4;
-            this.lblSpecies.Text = "Species:";
+            lblSpecies.AutoSize = true;
+            lblSpecies.Location = new System.Drawing.Point(566, 25);
+            lblSpecies.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblSpecies.Name = "lblSpecies";
+            lblSpecies.Size = new System.Drawing.Size(49, 15);
+            lblSpecies.TabIndex = 4;
+            lblSpecies.Text = "Species:";
             // 
             // txtSpecies
             // 
-            this.txtSpecies.Location = new System.Drawing.Point(485, 38);
-            this.txtSpecies.Name = "txtSpecies";
-            this.txtSpecies.Size = new System.Drawing.Size(210, 20);
-            this.txtSpecies.TabIndex = 5;
+            txtSpecies.Location = new System.Drawing.Point(566, 44);
+            txtSpecies.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtSpecies.Name = "txtSpecies";
+            txtSpecies.Size = new System.Drawing.Size(244, 23);
+            txtSpecies.TabIndex = 5;
             // 
             // lblAge
             // 
-            this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(15, 66);
-            this.lblAge.Name = "lblAge";
-            this.lblAge.TabIndex = 6;
-            this.lblAge.Text = "Age (years, 0-100):";
+            lblAge.AutoSize = true;
+            lblAge.Location = new System.Drawing.Point(18, 76);
+            lblAge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblAge.Name = "lblAge";
+            lblAge.Size = new System.Drawing.Size(104, 15);
+            lblAge.TabIndex = 6;
+            lblAge.Text = "Age (years, 0-100):";
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(15, 82);
-            this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(210, 20);
-            this.txtAge.TabIndex = 7;
+            txtAge.Location = new System.Drawing.Point(18, 95);
+            txtAge.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new System.Drawing.Size(244, 23);
+            txtAge.TabIndex = 7;
             // 
             // lblRecoveryScore
             // 
-            this.lblRecoveryScore.AutoSize = true;
-            this.lblRecoveryScore.Location = new System.Drawing.Point(250, 66);
-            this.lblRecoveryScore.Name = "lblRecoveryScore";
-            this.lblRecoveryScore.TabIndex = 8;
-            this.lblRecoveryScore.Text = "Recovery Score (0-100):";
+            lblRecoveryScore.AutoSize = true;
+            lblRecoveryScore.Location = new System.Drawing.Point(292, 76);
+            lblRecoveryScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblRecoveryScore.Name = "lblRecoveryScore";
+            lblRecoveryScore.Size = new System.Drawing.Size(130, 15);
+            lblRecoveryScore.TabIndex = 8;
+            lblRecoveryScore.Text = "Recovery Score (0-100):";
             // 
             // txtRecoveryScore
             // 
-            this.txtRecoveryScore.Location = new System.Drawing.Point(250, 82);
-            this.txtRecoveryScore.Name = "txtRecoveryScore";
-            this.txtRecoveryScore.Size = new System.Drawing.Size(210, 20);
-            this.txtRecoveryScore.TabIndex = 9;
+            txtRecoveryScore.Location = new System.Drawing.Point(292, 95);
+            txtRecoveryScore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            txtRecoveryScore.Name = "txtRecoveryScore";
+            txtRecoveryScore.Size = new System.Drawing.Size(244, 23);
+            txtRecoveryScore.TabIndex = 9;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(485, 80);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(210, 24);
-            this.btnAdd.TabIndex = 10;
-            this.btnAdd.Text = "Add Animal";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            btnAdd.Location = new System.Drawing.Point(566, 92);
+            btnAdd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(245, 28);
+            btnAdd.TabIndex = 10;
+            btnAdd.Text = "Add Animal";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // txtSearchId
+            // 
+            txtSearchId.Location = new System.Drawing.Point(60, 554);
+            txtSearchId.Name = "txtSearchId";
+            txtSearchId.Size = new System.Drawing.Size(96, 23);
+            txtSearchId.TabIndex = 2;
+            // 
+            // btnSearch
+            // 
+            btnSearch.Location = new System.Drawing.Point(186, 549);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new System.Drawing.Size(91, 30);
+            btnSearch.TabIndex = 3;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveChanges
+            // 
+            btnSaveChanges.Enabled = false;
+            btnSaveChanges.Location = new System.Drawing.Point(60, 593);
+            btnSaveChanges.Name = "btnSaveChanges";
+            btnSaveChanges.Size = new System.Drawing.Size(91, 30);
+            btnSaveChanges.TabIndex = 4;
+            btnSaveChanges.Text = "Save Changes";
+            btnSaveChanges.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new System.Drawing.Point(186, 593);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new System.Drawing.Size(91, 30);
+            btnClear.TabIndex = 5;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(56, 516);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(100, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Search Animal ID:";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(595, 80);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(100, 24);
+            this.btnDelete.TabIndex = 11;
+            this.btnDelete.Text = "Delete Animal";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.grpAnimalDetails);
-            this.Controls.Add(this.dgvAnimalRecords);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAnimalRecords)).EndInit();
-            this.grpAnimalDetails.ResumeLayout(false);
-            this.grpAnimalDetails.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(942, 635);
+            Controls.Add(label1);
+            Controls.Add(btnClear);
+            Controls.Add(btnSaveChanges);
+            Controls.Add(btnSearch);
+            Controls.Add(txtSearchId);
+            Controls.Add(grpAnimalDetails);
+            Controls.Add(dgvAnimalRecords);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvAnimalRecords).EndInit();
+            grpAnimalDetails.ResumeLayout(false);
+            grpAnimalDetails.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -191,6 +276,11 @@
         private System.Windows.Forms.Label lblRecoveryScore;
         private System.Windows.Forms.TextBox txtRecoveryScore;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox txtSearchId;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnSaveChanges;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label label1;
     }
 }
 
