@@ -41,6 +41,7 @@
             this.lblRecoveryScore = new System.Windows.Forms.Label();
             this.txtRecoveryScore = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAnimalRecords)).BeginInit();
             this.grpAnimalDetails.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +68,7 @@
             this.grpAnimalDetails.Controls.Add(this.lblRecoveryScore);
             this.grpAnimalDetails.Controls.Add(this.txtRecoveryScore);
             this.grpAnimalDetails.Controls.Add(this.btnAdd);
+            this.grpAnimalDetails.Controls.Add(this.btnDelete);
             this.grpAnimalDetails.Location = new System.Drawing.Point(43, 315);
             this.grpAnimalDetails.Name = "grpAnimalDetails";
             this.grpAnimalDetails.Size = new System.Drawing.Size(713, 115);
@@ -153,11 +155,21 @@
             // 
             this.btnAdd.Location = new System.Drawing.Point(485, 80);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(210, 24);
+            this.btnAdd.Size = new System.Drawing.Size(100, 24);
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "Add Animal";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(595, 80);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(100, 24);
+            this.btnDelete.TabIndex = 11;
+            this.btnDelete.Text = "Delete Animal";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
@@ -191,6 +203,7 @@
         private System.Windows.Forms.Label lblRecoveryScore;
         private System.Windows.Forms.TextBox txtRecoveryScore;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
