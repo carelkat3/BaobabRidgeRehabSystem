@@ -28,5 +28,10 @@ namespace BaobabRidgeRehabSystem
             List<Animal> animals = DataHandler.GetAnimals();
             dgvAnimalRecords.DataSource = animals;
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
