@@ -6,6 +6,10 @@ namespace BaobabRidgeRehabSystem
     // Add and Update must both call Classify() so the rules live in a single place.
     internal static class AnimalClassifier
     {
+        // The five statuses from lowest to highest band. The summary report lists them in this order.
+        public static readonly string[] AllStatuses =
+            { "Critical", "Serious", "Stable", "Recovering", "Release-Ready" };
+
         // Works out an animal's status and housing unit from its Recovery Score (0-100).
         // The spelling of every status and housing unit must match the brief exactly,
         // because these strings are written to animals.txt and checked by assessors.
