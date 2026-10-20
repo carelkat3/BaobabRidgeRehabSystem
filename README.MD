@@ -1,10 +1,10 @@
 # Baobab Ridge Wildlife Rehabilitation Records System
 
 ## Team Members
-* [Member 1 Name] - [Student Number]
-* [Member 2 Name] - [Student Number]
-* [Member 3 Name] - [Student Number]
-* [Member 4 Name] - [Student Number]
+* Carel Paxton - 605116
+* Lincoln Michaels - 604934
+* Migal Groenewald - 602974
+* Wouter Kuhn - 602418
 
 ## How to Build and Run
 1. Clone the repository to your local machine.
