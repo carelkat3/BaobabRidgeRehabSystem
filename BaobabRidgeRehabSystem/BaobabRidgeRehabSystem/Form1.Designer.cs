@@ -46,6 +46,7 @@
             btnSaveChanges = new System.Windows.Forms.Button();
             btnClear = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
+            btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)dgvAnimalRecords).BeginInit();
             grpAnimalDetails.SuspendLayout();
             SuspendLayout();
@@ -229,19 +230,21 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(595, 80);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(100, 24);
-            this.btnDelete.TabIndex = 11;
-            this.btnDelete.Text = "Delete Animal";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            btnDelete.Location = new System.Drawing.Point(312, 593);
+            btnDelete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(110, 30);
+            btnDelete.TabIndex = 11;
+            btnDelete.Text = "Delete Animal";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(942, 635);
+            Controls.Add(btnDelete);
             Controls.Add(label1);
             Controls.Add(btnClear);
             Controls.Add(btnSaveChanges);
@@ -281,6 +284,7 @@
         private System.Windows.Forms.Button btnSaveChanges;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

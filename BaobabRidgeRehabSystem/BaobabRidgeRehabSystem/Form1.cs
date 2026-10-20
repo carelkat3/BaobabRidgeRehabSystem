@@ -15,6 +15,7 @@ namespace BaobabRidgeRehabSystem
         public Form1()
         {
             InitializeComponent();
+            BuildSummaryPanel(); // Feature 5 controls are built in code (see Form1.Summary.cs)
         }
 
         private void Form1_Load(object sender, EventArgs e)
